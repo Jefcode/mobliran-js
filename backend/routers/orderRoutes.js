@@ -1,11 +1,11 @@
-import { updateOrderToPaid } from './../controllers/orderController';
+import { updateOrderToPaid } from '../controllers/orderController.js';
 import { Router } from 'express';
 import {
-  addOrderItems,
-  getMyOrders,
-  getOrderById,
-} from '../controllers/orderController';
-import { protect } from '../middlewares/authMiddleware';
+	addOrderItems,
+	getMyOrders,
+	getOrderById,
+} from '../controllers/orderController.js';
+import { protect } from '../middlewares/authMiddleware.js';
 
 const router = Router();
 

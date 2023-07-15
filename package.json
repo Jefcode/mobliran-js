@@ -3,8 +3,9 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"type": "module",
 	"scripts": {
-		"start": "ts-node backend/server.ts",
+		"start": "node backend/server.js",
 		"dev": "nodemon backend/server.ts",
 		"data:import": "ts-node backend/seeder",
 		"data:destroy": "ts-node backend/seeder -d",

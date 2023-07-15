@@ -1,9 +1,8 @@
-import { CartItem, WishListItem } from './../../shared/types';
 import asyncHandler from 'express-async-handler';
 
-import User from '../models/userModel';
-import Product from '../models/productModel';
-import generateToken from '../utils/generateToken';
+import User from '../models/userModel.js';
+import Product from '../models/productModel.js';
+import generateToken from '../utils/generateToken.js';
 
 /**
  * @desc    Register a new User
@@ -168,7 +167,7 @@ export const updateUserProfile = asyncHandler(async (req, res) => {
  * @acess   Private
  */
 export const addToCart = asyncHandler(async (req, res) => {
-  const user: any = req.user;
+  const user = req.user;
 
   const { product, quantity } = req.body;
 
@@ -190,11 +189,11 @@ export const addToCart = asyncHandler(async (req, res) => {
 
   // Check if product exist in cart
   const existingItem = user.cart.find(
-    (p: CartItem) => p.product.toString() === product
+    (p) => p.product.toString() === product
   );
 
   if (existingItem) {
-    user.cart = user.cart.map((p: CartItem) => {
+    user.cart = user.cart.map((p) => {
       return p.product.toString() === product
         ? {
             ...p,
@@ -230,7 +229,7 @@ export const removeFromCart = asyncHandler(async (req, res) => {
 
   const user = req.user;
 
-  user.cart = user.cart.filter((p: CartItem) => {
+  user.cart = user.cart.filter((p) => {
     return p.product.toString() !== productId;
   });
 
@@ -249,7 +248,7 @@ export const updateCart = asyncHandler(async (req, res) => {
 
   const { cart } = req.body;
 
-  const newCart = cart.map((p: CartItem) => ({
+  const newCart = cart.map((p) => ({
     product: p.product,
     quantity: p.quantity,
   }));
@@ -303,7 +302,7 @@ export const addToWishlist = asyncHandler(async (req, res) => {
 
   // Check if product exist in cart
   const existingItem = user.wishlist.find(
-    (p: WishListItem) => p.product.toString() === product
+    (p) => p.product.toString() === product
   );
 
   if (!existingItem) {
@@ -327,7 +326,7 @@ export const removeFromWishlist = asyncHandler(async (req, res) => {
 
   const user = req.user;
 
-  user.wishlist = user.wishlist.filter((p: WishListItem) => {
+  user.wishlist = user.wishlist.filter((p) => {
     return p.product.toString() !== productId;
   });
 

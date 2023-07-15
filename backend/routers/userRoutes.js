@@ -12,8 +12,8 @@ import {
   updateUserAddress,
   updateUserProfile,
   updateWishlist,
-} from '../controllers/userController';
-import { protect } from '../middlewares/authMiddleware';
+} from '../controllers/userController.js';
+import { protect } from '../middlewares/authMiddleware.js';
 
 const router = Router();
 

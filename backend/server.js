@@ -3,12 +3,12 @@ import dotenv from 'dotenv';
 import morgan from 'morgan';
 import cors from 'cors';
 
-import productRoutes from './routers/productRoutes';
-import userRoutes from './routers/userRoutes';
-import categoryRoutes from './routers/categoryRoutes';
-import orderRoutes from './routers/orderRoutes';
-import connectDB from './config/db';
-import { errorHandler, notFound } from './middlewares/errorMiddleware';
+import productRoutes from './routers/productRoutes.js';
+import userRoutes from './routers/userRoutes.js';
+import categoryRoutes from './routers/categoryRoutes.js';
+import orderRoutes from './routers/orderRoutes.js';
+import connectDB from './config/db.js';
+import { errorHandler, notFound } from './middlewares/errorMiddleware.js';
 import path from 'path';
 
 dotenv.config();

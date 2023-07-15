@@ -1,6 +1,6 @@
 import asyncHandler from 'express-async-handler';
 
-import Category from '../models/categoryModel';
+import Category from '../models/categoryModel.js';
 
 /**
  * @desc    fetch all categories
@@ -8,6 +8,6 @@ import Category from '../models/categoryModel';
  * @acess   public
  */
 export const getAllCategories = asyncHandler(async (req, res) => {
-  const categories = await Category.find();
-  res.json(categories);
+	const categories = await Category.find();
+	res.json(categories);
 });
