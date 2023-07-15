@@ -8,7 +8,7 @@
 		"dev": "nodemon backend/server.ts",
 		"data:import": "ts-node backend/seeder",
 		"data:destroy": "ts-node backend/seeder -d",
-		"build": "NPM_CONFIG_PRODUCTION=false npm install && npm install --prefix frontend && npm run build --prefix frontend && ts-node backend/server.ts"
+		"build": "NPM_CONFIG_PRODUCTION=false npm install && npm install --prefix frontend && npm run build --prefix frontend"
 	},
 	"keywords": [],
 	"author": "",
