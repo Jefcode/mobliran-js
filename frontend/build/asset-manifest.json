@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b2cf077b.css",
+    "main.js": "/static/js/main.53e60962.js",
+    "static/media/rubik.ttf": "/static/media/rubik.974ab100afa4538622da.ttf",
+    "static/media/sahel-black.ttf": "/static/media/sahel-black.c6794276d897432517cb.ttf",
+    "static/media/sahel-bold.ttf": "/static/media/sahel-bold.cf0808b70e27cc002414.ttf",
+    "static/media/sahel.ttf": "/static/media/sahel.daa735b9c0c686998627.ttf",
+    "static/media/vazir-bold.ttf": "/static/media/vazir-bold.6e4170a89ebbdfc4ffc4.ttf",
+    "static/media/vazir-medium.ttf": "/static/media/vazir-medium.1fe71e7ef725ad5bffee.ttf",
+    "static/media/vazir-thin.ttf": "/static/media/vazir-thin.56ff18dffd4890bf9ac7.ttf",
+    "static/media/vazir-light.ttf": "/static/media/vazir-light.fd1b6a499837f3571166.ttf",
+    "static/media/hero-4.png": "/static/media/hero-4.03b49cc796a32f7dd13b.png",
+    "static/media/vazir.ttf": "/static/media/vazir.4a0d04c8b359377040cd.ttf",
+    "index.html": "/index.html",
+    "main.b2cf077b.css.map": "/static/css/main.b2cf077b.css.map",
+    "main.53e60962.js.map": "/static/js/main.53e60962.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2cf077b.css",
+    "static/js/main.53e60962.js"
+  ]
+}
