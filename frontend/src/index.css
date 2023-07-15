@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Vazir Font Faces */
+  @font-face {
+    font-family: vassir;
+    src: url(./fonts/vazir/vazir-thin.ttf);
+    font-weight: 100;
+  }
+
+  @font-face {
+    font-family: vassir;
+    src: url(./fonts/vazir/vazir-light.ttf);
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: vassir;
+    src: url(./fonts/vazir/vazir.ttf);
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: vassir;
+    src: url(./fonts/vazir/vazir-medium.ttf);
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: vassir;
+    src: url(./fonts/vazir/vazir-bold.ttf);
+    font-weight: 700;
+  }
+
+  /* Rubik Font Face */
+  @font-face {
+    font-family: Rubik;
+    src: url(./fonts/rubik/rubik.ttf);
+    font-weight: 400;
+  }
+
+  /* Sahel Font Faces */
+  @font-face {
+    font-family: Sahel;
+    src: url(./fonts/sahel/sahel.ttf);
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: Sahel;
+    src: url(./fonts/sahel/sahel-bold.ttf);
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: Sahel;
+    src: url(./fonts/sahel/sahel-black.ttf);
+    font-weight: 900;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.btn {
+  @apply bg-black text-white px-10 py-3 focus:outline-none hover:bg-black/75 transition duration-300;
+}
